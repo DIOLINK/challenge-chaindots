@@ -1,0 +1,5 @@
+GET https://restcountries.com/v3.1/independent?status=true HTTP/1.1
+###
+GET https://restcountries.com/v3.1/name/deutschland HTTP/1.1
+###
+GET https://restcountries.com/v3.1/region/Europe HTTP/1.1
