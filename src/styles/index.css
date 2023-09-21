@@ -15,6 +15,7 @@
   --text-color: #213547;
   --search-color: #939393;
   --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+  --drop-shadow: drop-shadow(2px 4px 6px black);
 
   --margin: 0 auto;
 }
@@ -43,6 +44,7 @@ body[data-theme='dark'] {
   --background-color-cards: #3d3d3d;
   --text-color: white;
   --box-shadow: 0 0 2rem -1rem rgba(251, 248, 248, 0.5);
+  --drop-shadow: drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.45));
 }
 
 @media screen and (max-width: 1640px) {

@@ -1,0 +1,24 @@
+.errorRoot {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  gap: 1rem;
+}
+
+.errorRoot h1 {
+  font-size: 8rem;
+  filter: var(--drop-shadow);
+  letter-spacing: 0.2rem;
+}
+
+.messagesError h4 {
+  text-align: center;
+}
+.messagesError p i {
+  font-size: 1rem;
+  color: red;
+}
