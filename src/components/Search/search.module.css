@@ -1,0 +1,18 @@
+.form {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--background-color-cards);
+  padding: 1rem 1.5rem;
+  width: 50%;
+}
+
+.form svg {
+  color: var(--search-color);
+}
+
+.searchInput {
+  background: transparent;
+  border: none;
+  margin-left: 1.5rem;
+}
