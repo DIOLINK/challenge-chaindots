@@ -3,8 +3,9 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
   z-index: 1;
+  background-color: var(--background-color-cards);
 }
 
 nav {

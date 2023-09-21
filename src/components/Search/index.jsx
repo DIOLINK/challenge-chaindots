@@ -1,3 +1,4 @@
+import { useCountries } from '@/contexts/CountriesContext';
 import useForm from '@/hook/useForms';
 import { IconSearch } from '@tabler/icons-react';
 import styles from './search.module.css';
@@ -6,8 +7,10 @@ export const Search = () => {
     search: '',
   });
   const { search } = formValues;
+  const { setCountryToFilter } = useCountries();
   const handleSubmitSearch = (event) => {
     event.preventDefault();
+    setCountryToFilter(search);
   };
 
   return (

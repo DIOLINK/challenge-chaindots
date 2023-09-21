@@ -1,4 +1,4 @@
-import { useTheme } from '@/contexts/ThemeContest';
+import { useTheme } from '@/contexts/ThemeContext';
 import { THEME } from '@/helpers';
 import { IconMoon, IconSun } from '@tabler/icons-react';
 import styles from './header.module.css';

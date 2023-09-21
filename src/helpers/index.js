@@ -9,3 +9,13 @@ export const THEME = {
     return mode === this.dark;
   },
 };
+
+export const filterByRegion = (countries, region) => {
+  if (region === '') return countries;
+  return countries.filter((country) => country.region.toLowerCase() === region.toLowerCase());
+};
+
+export const filterByCountry = (countries, countryName) => {
+  if (countryName === '') return countries;
+  return countries.filter((country) => country.name.common.toLowerCase().includes(countryName));
+};

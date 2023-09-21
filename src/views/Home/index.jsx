@@ -1,8 +1,8 @@
 import { GridCards, Layout, Search } from '@/components';
-import { useFetchCountries } from '@/hook/useFetchCountries';
+import { useCountries } from '@/contexts/CountriesContext';
 
 export const HomePage = () => {
-  const { data: countries } = useFetchCountries();
+  const { countries } = useCountries();
   return (
     <Layout>
       <Search />

@@ -14,5 +14,8 @@
 .searchInput {
   background: transparent;
   border: none;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
+  color: var(--text-color);
+  padding: 0.5rem 0 0.5rem 0.3rem;
+  width: 100%;
 }

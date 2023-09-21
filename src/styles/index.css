@@ -10,8 +10,8 @@
   -webkit-text-size-adjust: 100%;
 
   --max-width: 1640px;
-  --background-color: white;
-  --background-color-cards: #fafafa;
+  --background-color: #fafafa;
+  --background-color-cards: white;
   --text-color: #213547;
   --search-color: #939393;
   --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
