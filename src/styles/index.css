@@ -16,6 +16,7 @@
   --search-color: #939393;
   --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
   --drop-shadow: drop-shadow(2px 4px 6px black);
+  --paddingTop: 3%;
 
   --margin: 0 auto;
 }
@@ -23,6 +24,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 

@@ -10,7 +10,10 @@ export const CountriesProvider = ({ children }) => {
   const [countryToFilter, setCountryToFilter] = useState('');
   const [regionToFilter, setRegionToFilter] = useState('');
   const { data, loading } = useFetchCountries();
-  const listRegions = new Set(data.map((country) => country.region));
+  const listRegions = ['All', ...new Set(data.map((country) => country.region))].map((item) => ({
+    ['value']: item.toLowerCase(),
+    ['label']: item,
+  }));
 
   return (
     <CountriesContext.Provider

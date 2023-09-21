@@ -3,7 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 4rem;
   flex-wrap: wrap;
-  padding: 25px 0;
+  padding-top: var(--paddingTop);
   margin: 0 auto;
 }
 

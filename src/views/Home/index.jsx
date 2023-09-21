@@ -1,12 +1,13 @@
-import { GridCards, Layout, Search } from '@/components';
-import { useCountries } from '@/contexts/CountriesContext';
-
+import { GridCards, Layout, Search, SelectRegion } from '@/components';
+import './home.module.css';
 export const HomePage = () => {
-  const { countries } = useCountries();
   return (
     <Layout>
-      <Search />
-      <GridCards items={countries} />
+      <section>
+        <Search />
+        <SelectRegion />
+      </section>
+      <GridCards />
     </Layout>
   );
 };

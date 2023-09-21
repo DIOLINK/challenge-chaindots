@@ -1,0 +1,25 @@
+.customSelect__control {
+  width: 250px !important;
+  background-color: var(--background-color-cards) !important;
+  padding: 1rem 1.5rem;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+}
+
+.customSelect__single-value {
+  color: var(--text-color) !important;
+}
+
+.customSelect__menu {
+  background-color: var(--background-color-cards) !important;
+  color: var(--text-color) !important;
+}
+
+.customSelect__option--is-focused {
+  background-color: var(--search-color) !important;
+}
+
+.customSelect__option--is-selected {
+  background-color: var(--search-color) !important;
+}
