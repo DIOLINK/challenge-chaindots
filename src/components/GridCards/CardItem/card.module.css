@@ -3,11 +3,13 @@
   background-color: var(--background-color-cards);
   overflow: hidden;
   cursor: pointer;
+  box-shadow: var(--box-shadow-btn);
 }
 
 .flagContainer img {
   width: 100%;
-  height: 220px;
+  max-height: 220px;
+  aspect-ratio: 2/1;
 }
 
 .info,

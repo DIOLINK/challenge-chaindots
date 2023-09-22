@@ -1,10 +1,13 @@
+import { useCountry } from '@/contexts/CounterContext';
 import { routeInfoCountry } from '@/helpers/index';
 import { useNavigate } from 'react-router-dom';
 import styles from './card.module.css';
 export const CardItem = ({ item }) => {
   const { flags, name, population, region, capital } = item;
   const navigate = useNavigate();
+  const { setCounty } = useCountry();
   const handleClickCountry = () => {
+    setCounty(item);
     navigate(routeInfoCountry(name.common));
   };
   return (

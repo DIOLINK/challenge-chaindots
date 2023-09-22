@@ -27,3 +27,8 @@ export const routeInfoCountry = (countryName) =>
 
 export const HOME = '/challenge-chaindots';
 export const INFO_COUNTRY = '/challenge-chaindots/info-country/:name';
+
+export const INIT_VALUE = {
+  data: [],
+  loading: true,
+};

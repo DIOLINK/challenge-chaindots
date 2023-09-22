@@ -1,5 +1,7 @@
 GET https://restcountries.com/v3.1/all HTTP/1.1
 ###
-GET https://restcountries.com/v3.1/name/deutschland HTTP/1.1
+GET https://restcountries.com/v3.1/name/China HTTP/1.1
 ###
 GET https://restcountries.com/v3.1/region/Europe HTTP/1.1
+###
+GET https://restcountries.com/v3.1/alpha?codes=CN HTTP/1.1

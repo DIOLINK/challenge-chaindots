@@ -6,6 +6,11 @@
   padding: 1rem 1.5rem;
   width: 50%;
   transition: all 0.5s;
+  box-shadow: var(--box-shadow-btn);
+}
+
+input:focus-visible {
+  border: none;
 }
 
 .form svg {

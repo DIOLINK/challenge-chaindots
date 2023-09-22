@@ -5,6 +5,7 @@
   border: none !important;
   border-radius: 5px !important;
   cursor: pointer !important;
+  box-shadow: var(--box-shadow-btn);
 }
 
 .customSelect__single-value {

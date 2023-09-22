@@ -1,9 +1,10 @@
+import { CountryProvider } from '@/contexts/CounterContext';
+import { CountriesProvider } from '@/contexts/CountriesContext';
 import { ThemeProvider } from '@/contexts/ThemeContext';
+import { HOME, INFO_COUNTRY } from '@/helpers';
 import '@/styles/index.css';
 import { ErrorPage, HomePage, InfoCountry } from '@/views';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { CountriesProvider } from './contexts/CountriesContext';
-import { HOME, INFO_COUNTRY } from './helpers';
 
 const router = createBrowserRouter([
   { path: HOME, element: <HomePage />, errorElement: <ErrorPage /> },
@@ -18,7 +19,9 @@ function App() {
   return (
     <ThemeProvider>
       <CountriesProvider>
-        <RouterProvider router={router} />
+        <CountryProvider>
+          <RouterProvider router={router} />
+        </CountryProvider>
       </CountriesProvider>
     </ThemeProvider>
   );

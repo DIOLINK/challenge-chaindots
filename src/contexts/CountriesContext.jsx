@@ -9,17 +9,18 @@ export const useCountries = () => useContext(CountriesContext);
 export const CountriesProvider = ({ children }) => {
   const [countryToFilter, setCountryToFilter] = useState('');
   const [regionToFilter, setRegionToFilter] = useState('');
-  const { data, loading } = useFetchCountries();
-  const listRegions = ['All', ...new Set(data.map((country) => country.region))].map((item) => ({
-    ['value']: item.toLowerCase(),
-    ['label']: item,
-  }));
-
+  const { data: countries, loading } = useFetchCountries();
+  const listRegions = ['All', ...new Set(countries.map((country) => country.region))].map(
+    (item) => ({
+      ['value']: item.toLowerCase(),
+      ['label']: item,
+    })
+  );
   return (
     <CountriesContext.Provider
       value={{
         countries: filterByCountry(
-          filterByRegion(data, regionToFilter),
+          filterByRegion(countries, regionToFilter),
           countryToFilter.toLowerCase()
         ),
         listRegions,

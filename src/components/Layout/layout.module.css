@@ -6,4 +6,5 @@
   margin: var(--margin);
   max-width: var(--max-width);
   padding-top: var(--paddingTop);
+  height: 100%;
 }

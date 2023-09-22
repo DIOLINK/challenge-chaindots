@@ -1,3 +1,3 @@
-import { getCountries } from './getCountries';
+import { getCountries, getCountry } from './getCountries';
 
-export { getCountries };
+export { getCountries, getCountry };

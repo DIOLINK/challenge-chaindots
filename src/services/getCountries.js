@@ -4,3 +4,9 @@ export const getCountries = async () => {
   const data = await resp.json();
   return data;
 };
+
+export const getCountry = async (codeCountry) => {
+  const resp = await fetch(API_URL + `alpha?codes=${codeCountry}`);
+  const data = await resp.json();
+  return data;
+};
