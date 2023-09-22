@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
 ]);
+
 function App() {
   return (
     <ThemeProvider>

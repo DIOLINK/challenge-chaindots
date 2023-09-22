@@ -10,3 +10,9 @@ export const getCountry = async (codeCountry) => {
   const data = await resp.json();
   return data;
 };
+
+export const getCountryByName = async (name) => {
+  const resp = await fetch(API_URL + `name/${name}?fullText=true`);
+  const data = await resp.json();
+  return data;
+};

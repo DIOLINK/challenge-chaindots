@@ -6,16 +6,14 @@ const CountryContext = createContext();
 export const useCountry = () => useContext(CountryContext);
 
 export const CountryProvider = ({ children }) => {
-  const { country, setCountryValue, setBorders, countriesBorder, setCounty } = useFetchCountry();
+  const { country, countriesBorder, setCounty } = useFetchCountry();
   return (
     <CountryContext.Provider
       value={{
         loading: country.loading || countriesBorder.loading,
         country,
         countriesBorder: countriesBorder.data || [],
-        setCountryValue,
         setCounty,
-        setBorders,
       }}
     >
       {children}

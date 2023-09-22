@@ -26,9 +26,22 @@ export const routeInfoCountry = (countryName) =>
   `/challenge-chaindots/info-country/${countryName.replaceAll(' ', '_')}`;
 
 export const HOME = '/challenge-chaindots';
-export const INFO_COUNTRY = '/challenge-chaindots/info-country/:name';
+export const INFO_COUNTRY = '/challenge-chaindots/info-country/:nameCountry';
 
 export const INIT_VALUE = {
   data: [],
   loading: true,
+};
+
+export const isFrontend = () => typeof window !== 'undefined';
+
+export const getItemLocalStorage = (key, initialValue) => {
+  try {
+    if (isFrontend()) {
+      const item = window.localStorage.getItem(key);
+      return item ? JSON.parse(item) : initialValue;
+    }
+  } catch (error) {
+    return initialValue;
+  }
 };
