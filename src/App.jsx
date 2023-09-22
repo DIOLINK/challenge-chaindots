@@ -5,7 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { CountriesProvider } from './contexts/CountriesContext';
 
 const router = createBrowserRouter([
-  { path: '/', element: <HomePage />, errorElement: <ErrorPage /> },
+  { path: '/challenge-chaindots', element: <HomePage />, errorElement: <ErrorPage /> },
 ]);
 function App() {
   return (
