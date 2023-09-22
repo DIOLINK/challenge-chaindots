@@ -21,3 +21,9 @@ export const filterByCountry = (countries, countryName) => {
 };
 
 export const isEmpty = (array = []) => array.length === 0;
+
+export const routeInfoCountry = (countryName) =>
+  `/challenge-chaindots/info-country/${countryName.replaceAll(' ', '_')}`;
+
+export const HOME = '/challenge-chaindots';
+export const INFO_COUNTRY = '/challenge-chaindots/info-country/:name';

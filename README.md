@@ -11,6 +11,19 @@ Este proyecto es una aplicación web desarrollada en React con Vite que utiliza 
 - ### Ver los estados "hover" y "focus" de todos los elementos interactivos de la página.
 - ### Alternar la combinación de colores entre el modo claro y el oscuro.
 
+## TO DO
+- [X] Ver todos los países de la API en la página de inicio.
+- [X] Buscar un país mediante un campo de entrada.
+- [X] Filtrar países por región.
+- [ ] Hacer clic en un país para ver información más detallada en una página aparte.
+- [ ] Hacer clic en los países fronterizos en la página de detalles.
+- [X] Ver el diseño óptimo de la interfaz en función del tamaño de la pantalla de su dispositivo.
+- [ ] Ver los estados "hover" y "focus" de todos los elementos interactivos de la página.
+
+###### BONUS
+- [X] Alternar la combinación de colores entre el modo claro y el oscuro.
+---
+
 ## Uso
 Una vez que la aplicación esté en funcionamiento, puedes interactuar con ella para ver los países, buscar, filtrar y explorar detalles sobre cada país. Además, puedes cambiar entre los modos claro y oscuro y experimentar con la interfaz en diferentes tamaños de pantalla.
 

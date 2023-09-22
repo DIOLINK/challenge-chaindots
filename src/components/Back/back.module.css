@@ -1,0 +1,19 @@
+.goBackRoot {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.goBack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--background-color-cards);
+  color: var(--text-color);
+  max-width: 150px;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,8 +1,14 @@
+import { routeInfoCountry } from '@/helpers/index';
+import { useNavigate } from 'react-router-dom';
 import styles from './card.module.css';
 export const CardItem = ({ item }) => {
   const { flags, name, population, region, capital } = item;
+  const navigate = useNavigate();
+  const handleClickCountry = () => {
+    navigate(routeInfoCountry(name.common));
+  };
   return (
-    <div className={styles.cardRoot}>
+    <div className={styles.cardRoot} onClick={handleClickCountry}>
       <div className={styles.flagContainer}>
         <img src={flags.png} alt={name.common} title={name.common} />
       </div>

@@ -2,6 +2,7 @@
   border-radius: 8px;
   background-color: var(--background-color-cards);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .flagContainer img {

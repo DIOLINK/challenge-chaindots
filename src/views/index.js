@@ -1,4 +1,5 @@
 import { ErrorPage } from './Error';
 import { HomePage } from './Home';
+import { InfoCountry } from './InfoCountry';
 
-export { ErrorPage, HomePage };
+export { ErrorPage, HomePage, InfoCountry };

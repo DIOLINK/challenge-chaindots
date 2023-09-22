@@ -30,3 +30,8 @@ nav {
 .toggleTheme span {
   text-transform: capitalize;
 }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
