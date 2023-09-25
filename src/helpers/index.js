@@ -1,3 +1,4 @@
+export { STR_TXT } from './strings';
 export const THEME = {
   dark: 'dark',
   light: 'light',
@@ -25,8 +26,11 @@ export const isEmpty = (array = []) => array.length === 0;
 export const routeInfoCountry = (countryName) =>
   `/challenge-chaindots/info-country/${countryName.replaceAll(' ', '_')}`;
 
-export const HOME = '/challenge-chaindots';
-export const INFO_COUNTRY = '/challenge-chaindots/info-country/:nameCountry';
+export const ROUTES = {
+  home: '/challenge-chaindots',
+  info: '/challenge-chaindots/info-country/:nameCountry',
+  other: '*',
+};
 
 export const INIT_VALUE = {
   data: [],
@@ -45,3 +49,8 @@ export const getItemLocalStorage = (key, initialValue) => {
     return initialValue;
   }
 };
+
+export const selectedOption = (listRegions, regionToFilter) =>
+  listRegions.filter(function (option) {
+    return option.value === regionToFilter;
+  });

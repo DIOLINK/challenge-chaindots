@@ -24,22 +24,27 @@
   padding-bottom: 0.5rem;
 }
 
-.flag img {
+.flag img,
+.countryInfo {
   width: 100%;
+}
+
+.flag img {
   aspect-ratio: 4/3;
 }
 
-.countryInfo {
+.countryInfo,
+.borderCountries {
   align-items: flex-start;
   display: flex;
+}
+
+.countryInfo {
   flex-direction: column;
-  width: 100%;
   padding-bottom: 5%;
 }
 
 .borderCountries {
-  align-items: flex-start;
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -53,7 +58,7 @@
 .btnBorder {
   animation: blur-in 0.4s linear both;
   background-color: var(--background-color-cards);
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   border: none;
   box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 11%);
   color: var(--text-color);

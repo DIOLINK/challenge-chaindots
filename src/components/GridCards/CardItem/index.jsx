@@ -1,5 +1,5 @@
 import { useCountry } from '@/contexts/CounterContext';
-import { routeInfoCountry } from '@/helpers/index';
+import { STR_TXT, routeInfoCountry } from '@/helpers';
 import { useNavigate } from 'react-router-dom';
 import styles from './card.module.css';
 export const CardItem = ({ item }) => {
@@ -19,15 +19,15 @@ export const CardItem = ({ item }) => {
         <h3>{name.common}</h3>
         <ul>
           <li>
-            <strong>Population:&nbsp;</strong>
+            <strong>{STR_TXT.population}:&nbsp;</strong>
             {new Intl.NumberFormat('en').format(population)}
           </li>
           <li>
-            <strong>Region:&nbsp;</strong>
+            <strong>{STR_TXT.region}:&nbsp;</strong>
             {region}
           </li>
           <li>
-            <strong>Capital:&nbsp;</strong>
+            <strong>{STR_TXT.capital}:&nbsp;</strong>
             {capital}
           </li>
         </ul>

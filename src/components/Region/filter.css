@@ -1,7 +1,7 @@
 .customSelect__control {
   width: 250px !important;
   background-color: var(--background-color-cards) !important;
-  padding: 1rem 1.5rem;
+  padding: var(--padding);
   border: none !important;
   border-radius: 5px !important;
   cursor: pointer !important;

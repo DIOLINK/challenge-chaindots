@@ -1,11 +1,16 @@
 :root {
+  --border-radius: 5px;
+  --border-radius-50: 50%;
   --background-color-cards: white;
   --background-color: #dbdbdb;
   --box-shadow-btn: 0 0 1rem 0.5rem rgb(0 0 0 / 11%);
-  --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+  --box-shadow-header: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+  --box-shadow: var(--box-shadow-header);
   --drop-shadow: drop-shadow(2px 4px 6px black);
   --margin: 0 auto;
   --max-width: 1640px;
+  --gap1: 1rem;
+  --padding: 1rem 1.5rem;
   --paddingTop: 3%;
   --search-color: #939393;
   --text-color: #213547;

@@ -1,24 +1,27 @@
+.goBackRoot,
+.goBack {
+  width: 100%;
+}
+
 .goBackRoot {
   align-items: flex-start;
   padding-bottom: clamp(75px, 5%, 95px);
-  width: 100%;
 }
 
 .goBack {
   align-items: center;
   background-color: var(--background-color-cards);
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   border: none;
   box-shadow: var(--box-shadow-btn);
   color: var(--text-color);
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: var(--gap1);
   justify-content: space-around;
   max-width: 150px;
-  padding: 1rem 1.5rem;
-  width: 100%;
+  padding: var(--padding);
 }
 
 .link {

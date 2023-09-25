@@ -1,19 +1,20 @@
 import { useCountries } from '@/contexts/CountriesContext';
+import { STR_TXT, selectedOption } from '@/helpers';
 import Select from 'react-select';
 import './filter.css';
 
 export const SelectRegion = () => {
-  const { listRegions, setRegionToFilter } = useCountries();
-
+  const { listRegions, regionToFilter, setRegionToFilter } = useCountries();
   return (
     <Select
       options={listRegions}
-      classNamePrefix='customSelect'
+      classNamePrefix={STR_TXT.classNamePrefix}
       components={{
         IndicatorSeparator: () => null,
       }}
       onChange={({ value }) => setRegionToFilter(value)}
-      placeholder='Filter by Region'
+      placeholder={STR_TXT.filterByRegion}
+      value={selectedOption(listRegions, regionToFilter)}
     />
   );
 };

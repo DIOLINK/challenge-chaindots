@@ -1,5 +1,5 @@
 .cardRoot {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   background-color: var(--background-color-cards);
   overflow: hidden;
   cursor: pointer;
@@ -29,7 +29,7 @@
 
 .info {
   color: var(--text-color);
-  gap: 1rem;
+  gap: var(--gap1);
   padding: 1rem 2rem 3rem;
 }
 

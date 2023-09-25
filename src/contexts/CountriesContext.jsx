@@ -1,4 +1,4 @@
-import { filterByCountry, filterByRegion } from '@/helpers/index';
+import { STR_TXT, filterByCountry, filterByRegion } from '@/helpers';
 import { useFetchCountries } from '@/hook/useFetchCountries';
 import { createContext, useContext, useState } from 'react';
 
@@ -10,7 +10,7 @@ export const CountriesProvider = ({ children }) => {
   const [countryToFilter, setCountryToFilter] = useState('');
   const [regionToFilter, setRegionToFilter] = useState('');
   const { data: countries, loading } = useFetchCountries();
-  const listRegions = ['All', ...new Set(countries.map((country) => country.region))].map(
+  const listRegions = [STR_TXT.all, ...new Set(countries.map((country) => country.region))].map(
     (item) => ({
       ['value']: item.toLowerCase(),
       ['label']: item,
@@ -23,8 +23,10 @@ export const CountriesProvider = ({ children }) => {
           filterByRegion(countries, regionToFilter),
           countryToFilter.toLowerCase()
         ),
+        countryToFilter,
         listRegions,
         loading,
+        regionToFilter,
         setCountryToFilter,
         setRegionToFilter,
       }}

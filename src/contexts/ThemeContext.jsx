@@ -1,17 +1,20 @@
 import { THEME } from '@/helpers';
+import { useLocalState } from '@/hook/useLocalStorage';
 import { createContext, useContext, useEffect, useState } from 'react';
 
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(THEME.dark);
+  const [value, setValue] = useLocalState('theme', THEME.light);
+  const [theme, setTheme] = useState(value);
   useEffect(() => {
-    document.body.setAttribute(THEME.dataTheme, THEME.dark);
+    document.body.setAttribute(THEME.dataTheme, theme);
   }, []);
 
   const toggleTheme = () => {
     setTheme((oldTheme) => THEME.changeMode(oldTheme));
     document.body.setAttribute(THEME.dataTheme, THEME.changeMode(theme));
+    setValue(THEME.changeMode(theme));
   };
 
   return <ThemeContext.Provider value={{ theme, toggleTheme }}>{children}</ThemeContext.Provider>;

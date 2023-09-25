@@ -1,5 +1,5 @@
 import { useCountry } from '@/contexts/CounterContext';
-import { routeInfoCountry } from '@/helpers/index';
+import { STR_TXT, routeInfoCountry } from '@/helpers';
 import { useNavigate } from 'react-router-dom';
 import styles from './info.module.css';
 export const BorderCountries = () => {
@@ -11,7 +11,7 @@ export const BorderCountries = () => {
   };
   return (
     <div className={styles.borderCountries}>
-      <span>Border Countries:</span>
+      <span>{STR_TXT.borderCountries}:</span>
       <div className={styles.keyboard}>
         {countriesBorder.map((country, index) => (
           <button

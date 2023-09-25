@@ -1,13 +1,14 @@
 import { useCountries } from '@/contexts/CountriesContext';
+import { STR_TXT } from '@/helpers';
 import useForm from '@/hook/useForms';
 import { IconSearch } from '@tabler/icons-react';
 import styles from './search.module.css';
 export const Search = () => {
-  const [formValues, handleInputChange, reset] = useForm({
-    search: '',
+  const { countryToFilter, setCountryToFilter } = useCountries();
+  const [{ search }, handleInputChange] = useForm({
+    search: countryToFilter,
   });
-  const { search } = formValues;
-  const { setCountryToFilter } = useCountries();
+
   const handleSubmitSearch = (event) => {
     event.preventDefault();
     setCountryToFilter(search);
@@ -19,8 +20,8 @@ export const Search = () => {
         <IconSearch />
         <input
           type='text'
-          name='search'
-          placeholder='Search for a country...'
+          name={STR_TXT.search}
+          placeholder={STR_TXT.SearchCountry}
           autoComplete='off'
           value={search}
           onChange={handleInputChange}

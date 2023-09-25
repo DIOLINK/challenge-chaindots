@@ -1,15 +1,16 @@
 .form {
   display: flex;
   align-items: center;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
   background-color: var(--background-color-cards);
-  padding: 1rem 1.5rem;
+  padding: var(--padding);
   width: 50%;
   transition: all 0.5s;
   box-shadow: var(--box-shadow-btn);
 }
 
-input:focus-visible {
+input:focus-visible,
+.searchInput {
   border: none;
 }
 
@@ -19,7 +20,6 @@ input:focus-visible {
 
 .searchInput {
   background: transparent;
-  border: none;
   margin-left: 1rem;
   color: var(--text-color);
   padding: 0.5rem 0 0.5rem 0.3rem;

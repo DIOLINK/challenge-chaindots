@@ -1,12 +1,12 @@
-# Proyecto de React con Vite y API de Países
+# Proyecto en React con Vite de API de Países
 
 Este proyecto es una aplicación web desarrollada en React con Vite que utiliza la API de países [restcountries.com](https://restcountries.com/v3.1/). La aplicación permite a los usuarios:
 
 - ### Ver todos los países de la API en la página de inicio.
 - ### Buscar un país mediante un campo de entrada.
 - ### Filtrar países por región.
-- ### Hacer clic en un país para ver información más detallada en una página aparte.
-- ### Hacer clic en los países fronterizos en la página de detalles.
+- ### Hacer click en un país para ver información más detallada en una página aparte.
+- ### Hacer click en los países fronterizos en la página de detalles.
 - ### Ver el diseño óptimo de la interfaz en función del tamaño de la pantalla de su dispositivo.
 - ### Ver los estados "hover" y "focus" de todos los elementos interactivos de la página.
 - ### Alternar la combinación de colores entre el modo claro y el oscuro.
@@ -28,6 +28,10 @@ Este proyecto es una aplicación web desarrollada en React con Vite que utiliza 
 Una vez que la aplicación esté en funcionamiento, puedes interactuar con ella para ver los países, buscar, filtrar y explorar detalles sobre cada país. Además, puedes cambiar entre los modos claro y oscuro y experimentar con la interfaz en diferentes tamaños de pantalla.
 
 ## Configuración
+
+Ten en cuenta que debes tener acceso a la terminal de tu sistema operativo, ademas de tener [Git](https://git-scm.com/downloads) y [node](https://nodejs.org/es/download).
+
+---
 
 1. Clona este repositorio en tu máquina local con SSH con el siguiente comando:
 
