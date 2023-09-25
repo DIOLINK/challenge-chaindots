@@ -1,25 +1,22 @@
 :root {
-  font-family: Inter, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-
-  --max-width: 1640px;
-  --background-color: #fafafa;
   --background-color-cards: white;
-  --text-color: #213547;
-  --search-color: #939393;
-  --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+  --background-color: #dbdbdb;
   --box-shadow-btn: 0 0 1rem 0.5rem rgb(0 0 0 / 11%);
+  --box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
   --drop-shadow: drop-shadow(2px 4px 6px black);
-  --paddingTop: 3%;
-
   --margin: 0 auto;
+  --max-width: 1640px;
+  --paddingTop: 3%;
+  --search-color: #939393;
+  --text-color: #213547;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
 }
 
 * {
@@ -34,29 +31,29 @@
 }
 
 body {
+  background-color: var(--background-color);
+  color: var(--text-color);
   margin: 0;
   max-width: 100vw;
   min-height: 100vh;
   min-width: 320px;
   overflow-x: hidden;
-  color: var(--text-color);
-  background-color: var(--background-color);
   transition:
     background-color 0.3s ease,
     color 0.3s ease;
 }
 
 body[data-theme='dark'] {
-  --background-color: #242424;
   --background-color-cards: #3d3d3d;
-  --text-color: white;
-  --box-shadow: 0 0 2rem -1rem rgba(251, 248, 248, 0.5);
+  --background-color: #242424;
   --box-shadow-btn: 0 0 1rem 0.5rem rgb(0 0 0 / 20%);
+  --box-shadow: 0 0 2rem -1rem rgba(251, 248, 248, 0.5);
   --drop-shadow: drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.45));
+  --text-color: white;
 }
 main {
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1640px) {

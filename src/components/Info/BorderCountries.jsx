@@ -16,6 +16,7 @@ export const BorderCountries = () => {
         {countriesBorder.map((country, index) => (
           <button
             className={styles.btnBorder}
+            style={{ animationDelay: `${0.4 * index}s` }}
             key={country.name.common + index}
             title={country.name.common}
             onClick={() => handleClickCountry(country)}

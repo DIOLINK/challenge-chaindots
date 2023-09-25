@@ -1,10 +1,10 @@
 .gridCardsRoot {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 4rem;
-  flex-wrap: wrap;
-  padding-top: var(--paddingTop);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto;
+  padding-top: var(--paddingTop);
+  width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
