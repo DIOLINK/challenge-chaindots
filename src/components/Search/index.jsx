@@ -1,22 +1,24 @@
 import { useCountries } from '@/contexts/CountriesContext';
 import { STR_TXT } from '@/helpers';
+import useDebounce from '@/hook/useDebounce';
 import useForm from '@/hook/useForms';
 import { IconSearch } from '@tabler/icons-react';
+import { useEffect } from 'react';
 import styles from './search.module.css';
 export const Search = () => {
   const { countryToFilter, setCountryToFilter } = useCountries();
   const [{ search }, handleInputChange] = useForm({
     search: countryToFilter,
   });
+  const debouncedSearch = useDebounce((value) => setCountryToFilter(value));
 
-  const handleSubmitSearch = (event) => {
-    event.preventDefault();
-    setCountryToFilter(search);
-  };
+  useEffect(() => {
+    debouncedSearch(search);
+  }, [search]);
 
   return (
     <>
-      <form onSubmit={handleSubmitSearch} className={styles.form}>
+      <div className={styles.form}>
         <IconSearch />
         <input
           type='text'
@@ -27,7 +29,7 @@ export const Search = () => {
           onChange={handleInputChange}
           className={styles.searchInput}
         />
-      </form>
+      </div>
     </>
   );
 };
